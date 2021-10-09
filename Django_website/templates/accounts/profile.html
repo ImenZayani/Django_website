@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} Profile {% endblock %}
+
+{% block content %}
+<h1>
+    Profile
+</h1>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-7">
+            <div class="card p-3 py-4">
+                <div class="text-center"> <img src="https://www.tinygraphs.com/labs/isogrids/hexa16/helloworld?theme=bythepool&numcolors=4" width="100" class="rounded-circle"> </div>
+                <div class="text-center mt-3">
+                    <h5 class="mt-2 mb-0">{{user.get_full_name}} {{ user.username }}</h5> <span>Web Developer</span>
+                    <div class="px-4 mt-1">
+                        <p class="fonts">I am a self-motivated and creative
+                            engineering student specialized in computer
+                            science with keen interst in web development </p>
+                    </div>
+                    
+                    <div class="social-list">
+                        <a style="padding-left:20px;" href="https://www.facebook.com/profile.php?id=100004309635517"><i class="fab fa-facebook-f"></i></a>
+                        <a style="padding-left:20px;" href="https://www.instagram.com/imen_zayani/"><i class="fab fa-instagram"></i></a>
+                        <a style="padding-left:20px;" href="https://github.com/ImenZayani"><i class="fab fa-github"></i></a>
+                        <a style="padding-left:20px;" href="https://www.linkedin.com/in/imen-zayani-37991b141/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
