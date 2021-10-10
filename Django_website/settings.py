@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Django_website.apps.accounts.apps.AccountsConfig'
+    'Django_website.apps.accounts.apps.AccountsConfig',
+    'Django_website.apps.contact.apps.ContactConfig'
     
 ]
 
@@ -139,6 +140,9 @@ STATICFILES_DIRS = [
 LOGIN_URL = 'account:login'
 LOGIN_REDIRECT_URL = 'public:index'
 LOGOUT_REDIRECT_URL = 'public:index'
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "imen1.zayani1@gmail.com"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

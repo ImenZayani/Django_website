@@ -25,6 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Django_website.apps.public.urls')),
     path('accounts/', include('Django_website.apps.accounts.urls')),
+    path('contact/', include('Django_website.apps.contact.urls')),
+
     #Django Auth
     path('accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('accounts/logout', auth_views.LogoutView.as_view(), name='logout')
